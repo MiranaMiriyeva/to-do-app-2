@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+}
+
+#container{
+    width: 100%;
+    height: 745px;
+    background-color: indianred;
+    text-align: center;
+}
+.todolist{
+    padding: 20px 0 20px 0;
+}
+#inputId{
+    padding-bottom: 10px;
+    width: 350px;
+    border-radius: 50px;
+    height: 30px;
+}
+#add{
+    background-color: black;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+.main{
+    
+    padding: 20px 0 20px 590px;
+    /* display: flex;
+    gap: 120px; */
+    width: 350px;
+    
+
+}
+.text{
+    display: flex;
+    justify-content: baseline;
+
+}
+.deleteBtn{
+    background-color: indianred;
+    color: white; 
+    border-color: indianred;
+
+
+}
+.editBtn{
+    background-color: indianred;
+    color: white;  
+    border-color: indianred;
+
+}
+.buttons{
+    display: flex;
+    column-gap: 10px;
+    justify-content: end;
+  
+}
+.hr{width: 370px;
+margin-left:580px ;
+color: black;
+}
