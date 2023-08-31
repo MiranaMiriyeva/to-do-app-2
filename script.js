@@ -13,18 +13,20 @@ document.querySelector('#add').onclick = function () {
             </div>
             <hr class="hr">
         `;
-
-        
         let deleteBtn = newItem.querySelector('.deleteBtn');
         deleteBtn.onclick = function () {
             container.removeChild(newItem);
         };
-
-        
         container.appendChild(newItem);
-
-        
         input.value = '';
+
+        let editBtn = newItem.querySelector('.editBtn');
+        editBtn.onclick = function () {
+           input.value = document.querySelector('.text').innerHTML.value;
+        };
+        
+
+
     } else {
         alert("Please enter text");
     }
