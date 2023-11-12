@@ -1,7 +1,7 @@
 * {
     margin: 0;
-    padding: 0; /* Ekstra padding olabilecek sorunları önlemek için */
-    box-sizing: border-box; /* Padding ve border'ı genişlik ve yükseklik dahil olarak hesaplamak için */
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 #container {
@@ -32,10 +32,10 @@
 
 .main {
     display: flex;
-    justify-content: space-between; /* Değiştirildi */
+    justify-content: space-between; 
     width: 350px;
-    margin: 0 auto; /* Ortalamak için */
-    padding: 20px 0; /* Özel stil için */
+    margin: 0 auto; 
+    padding: 20px 0; 
 }
 
 .text {
@@ -58,7 +58,7 @@
 
 .hr {
     width: 370px;
-    margin: 0 auto; /* Eklenen satır: Tam ortada olması için */
+    margin: 0 auto; 
     color: black;
 }
 
