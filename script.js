@@ -5,10 +5,11 @@ document.querySelector('#add').onclick = function () {
         let newItem = document.createElement('div');
         newItem.innerHTML += `
             <div class="main">
+                
                 <span class="text">${input.value}</span>
                 <div class="buttons">
-                    <button class="deleteBtn">Delete</button>
-                    <button class="editBtn">Edit</button>
+                    <button class="deleteBtn"><i class="fa-solid fa-trash" style="color: #e61919;"></i></button>
+                    <button class="editBtn"><i class="fa-solid fa-pen-to-square" style="color: #3c61d3;"></i></button>
                 </div>
             </div>
             <hr class="hr">
@@ -22,7 +23,9 @@ document.querySelector('#add').onclick = function () {
 
         let editBtn = newItem.querySelector('.editBtn');
         editBtn.onclick = function () {
-           input.value = document.querySelector('.text').innerHTML.value;
+           input.value = newItem.querySelector('.text').innerHTML;
+           container.removeChild(newItem);
+
         };
         
 
